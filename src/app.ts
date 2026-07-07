@@ -17,6 +17,7 @@ app.get("/health", (_req: Request, res: Response) => {
 });
 
 app.use(API_PREFIX, routes);
+console.log("🚀 ~ routes:", routes)
 
 app.use(validationErrorHandler);
 
